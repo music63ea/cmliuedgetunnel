@@ -2,7 +2,7 @@
 import { connect } from 'cloudflare:sockets';
 
 let userID = 'f1eda228-e7f8-4431-9eb5-fcbf8cdc66ff';
-let proxyIP = '155.248.181.189;
+let proxyIP = '155.248.181.189';
 let DNS64Server = '';
 //let sub = '';
 let subConverter = atob('U1VCQVBJLkNNTGl1c3Nzcy5uZXQ=');
@@ -14,7 +14,7 @@ let parsedSocks5Address = {};
 let enableSocks = false;
 let enableHttp = false;
 let noTLS = 'false';
-const expire = 4102329600;//2099-12-31
+const expire = 4102329600;
 let proxyIPs;
 let socks5s;
 let go2Socks5s = [
@@ -29,7 +29,7 @@ let addressesnotls = [];
 let addressesnotlsapi = [];
 let addressescsv = [];
 let DLS = 8;
-let remarkIndex = 1;//CSV备注所在列偏移量
+let remarkIndex = 1;
 let FileName = atob('ZWRnZXR1bm5lbA==');
 let BotToken;
 let ChatID;
@@ -4568,5 +4568,6 @@ async function nginx() {
 	`
     return text;
 }
+
 
 
